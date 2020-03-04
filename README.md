@@ -3,7 +3,7 @@
 The aim of this project is to recommend movies to a user by using a user-based collaborativefiltering approach. For this project a data set of 100,000 movie ratings provided by [MovieLens](https://grouplens.org/datasets/movielens/100k/), consisting of 943 users and 1682 movies was used. This data setwas used to find users with similar movie rating in order to recommend film for the user to watch.
 
 
-## K Nearest Neighbours
+## K-Nearest Neighbours
 In order to recommend film to a user k-nearest neighbours (k-NN) was used. K-NN is a supervised machine learning algorithm used for classification and regression, however it is mostly used for classification problems.  The code to achieve this was written in Python using a combination of Pandas and Sklearn. At first the data is loaded from the files provided by the MovieLens data set into to Pandas dataFrames to make the data simpler to work with. 
 
 ## Method
