@@ -15,13 +15,15 @@ After finding the most similar users to the initial user, the films that both us
   
 The next stage was to calculate the optimum k value for the data set. To calculate the performance of each k value the root mean square error (RMSE) and mean absolute error (MAE) was calculated. To calculate the RSME and MAE the data set was split into a train and test set with an 80\%/20\% split respectively. As each k value was ran, the predicted score for the recommend films was compared against the actual score given by the user in the test data set. A range of k values between 2 to 100 was tried to find the optimum k value, Figure 1. From the results it can be seen that in the k value range from 15 to 18 the RSME and MAE reach a global minima. Upon closer inspection of the results it was found that a k value of 17 is the optimum value for this data set. If the data set was to change a new k values must be assessed. 
 
-![Figure 1: Comparison of MAE/RAE for different k values](https://i.imgur.com/c8CXxVM.jpg | width=500)
+<img src="https://i.imgur.com/c8CXxVM.jpg" alt_text="Figure 1: Comparison of MAE/RAE for different k values" width="500">
+
 **Figure 1: Comparison of MAE/RAE for different k values**
 
 ## Testing
 To prove that the user-based movie recommendation system provides an actual recommendation, the performance of the system must be evaluated using the RSME and MAE values. Two simulation methods were performed; random and worst-case. To keep the testing consistent between the different methods the k values was always set to 17. For the random simulation, each predicted rating was randomly generated from a uniform distribution. For the worst-case simulation, the system was ran to maximise the RSME and MAE value to simulate a worst-case scenario. This was achieved by setting the predicted rating to furthest possible value from the test data in order to maximise the difference between the predicted rating and the test rating. It was found that the RSME and MAE of the developed system are lower than the valves from the random and worst-case simulation, Figure 2. The developed system has a 43.5\% improvement over random in RSME value and 45.6\% in MAE. This shows that the system is providing actual movie recommendations as it is better than a random guess. 
 
-![Figure 2: Comparison of MAE/RAE for rating prediction methods - k=17](https://i.imgur.com/Mv1yahA.jpg | width=500)
+<img src="https://i.imgur.com/Mv1yahA.jpg" alt_text="Figure 2: Comparison of MAE/RAE for rating prediction methods - k=17" width="500">
+
 **Figure 2: Comparison of MAE/RAE for rating prediction methods - k=17**
 
 ## Improving Accuracy Using User Details
@@ -29,8 +31,8 @@ The next stage was to assess the impact that of adding users' details to improve
   
 With the data converted a series of tested was run to find the combination of user details that provide the best performance. Each combination was tried with a k value of 17, and it's RSME and MAE value was calculated, Figure 3. From the tests it was found the combining gender and occupation with the rating data provided the best results. A 3.9\% increase in RSME accuracy and 4.3\% increase in MAE. This change is very small, and it can be assumed that the rating alone provides sufficient recommendations.
 
-![Figure 3: Comparison of user details on MAE/RAE - k=17](https://i.imgur.com/XMqKsjF.jpg | width=500)
-<img src="https://i.imgur.com/XMqKsjF.jpg" width="500">
+<img src="https://i.imgur.com/XMqKsjF.jpg" alt_text="Figure 3: Comparison of user details on MAE/RAE - k=17" width="500">
+
 **Figure 3: Comparison of user details on MAE/RAE - k=17**
 
 
