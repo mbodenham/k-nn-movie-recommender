@@ -32,6 +32,7 @@ The next stage was to assess the impact that of adding users' details to improve
 With the data converted a series of tested was run to find the combination of user details that provide the best performance. Each combination was tried with a k value of 17, and it's RSME and MAE value was calculated, Figure 3. From the tests it was found the combining gender and occupation with the rating data provided the best results. A 3.9\% increase in RSME accuracy and 4.3\% increase in MAE. This change is very small, and it can be assumed that the rating alone provides sufficient recommendations.
 
 <img src="https://i.imgur.com/XMqKsjF.jpg" alt_text="Figure 3: Comparison of user details on MAE/RAE - k=17" width="500">
+
 **Figure 3: Comparison of user details on MAE/RAE - k=17**
 
 
